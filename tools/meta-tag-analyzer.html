@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meta Tag Analyzer - Free SEO Tool</title>
+  <meta name="description" content="Analyze your webpage meta tags, title, description, robots, and canonical URL with our free Meta Tag Analyzer.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://haqnawazrehan05-ai.github.io/seo-tools-hub/tools/meta-tag-analyzer.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5eaf0;
+      padding: 18px 20px;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #172033;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #42526b;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 70px auto 30px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #172033;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #607089;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 35px auto 70px;
+      padding: 0 20px;
+    }
+
+    .tool-box {
+      background: #ffffff;
+      border: 1px solid #e1e7ef;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(20, 40, 80, 0.05);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: #172033;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 230px;
+      padding: 15px;
+      border: 1px solid #cfd8e3;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: monospace;
+      resize: vertical;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #2563eb;
+    }
+
+    button {
+      margin-top: 18px;
+      padding: 13px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .results {
+      display: none;
+      margin-top: 30px;
+    }
+
+    .result-card {
+      background: #f8fafc;
+      border: 1px solid #e1e7ef;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 15px;
+    }
+
+    .result-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .result-card p {
+      margin: 8px 0;
+      line-height: 1.6;
+      word-break: break-word;
+    }
+
+    .status {
+      font-weight: 700;
+    }
+
+    .good {
+      color: #15803d;
+    }
+
+    .warning {
+      color: #b45309;
+    }
+
+    .bad {
+      color: #dc2626;
+    }
+
+    footer {
+      background: #172033;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        margin-top: 45px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .tool-box {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="../index.html">SEO Tools Hub</a>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="index.html">SEO Tools</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Meta Tag Analyzer</h1>
+  <p>
+    Analyze the important meta information of your webpage and check
+    your title, description, robots, and canonical tags.
+  </p>
+</section>
+
+<main class="container">
+
+  <div class="tool-box">
+
+    <label for="htmlInput">Paste Your HTML Code</label>
+
+    <textarea
+      id="htmlInput"
+      placeholder="Paste your webpage HTML code here..."
+    ></textarea>
+
+    <button onclick="analyzeMetaTags()">
+      Analyze Meta Tags
+    </button>
+
+    <div class="results" id="results">
+
+      <div class="result-card">
+        <h3>Page Title</h3>
+        <p id="titleResult"></p>
+      </div>
+
+      <div class="result-card">
+        <h3>Meta Description</h3>
+        <p id="descriptionResult"></p>
+      </div>
+
+      <div class="result-card">
+        <h3>Robots Meta Tag</h3>
+        <p id="robotsResult"></p>
+      </div>
+
+      <div class="result-card">
+        <h3>Canonical URL</h3>
+        <p id="canonicalResult"></p>
+      </div>
+
+      <div class="result-card">
+        <h3>Viewport</h3>
+        <p id="viewportResult"></p>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 SEO Tools Hub. All rights reserved.</p>
+  <p>
+    <a href="../privacy.html">Privacy Policy</a>
+    <a href="../terms.html">Terms & Conditions</a>
+  </p>
+</footer>
+
+<script>
+function analyzeMetaTags() {
+
+  const html = document.getElementById("htmlInput").value.trim();
+
+  if (!html) {
+    alert("Please paste your HTML code first.");
+    return;
+  }
+
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, "text/html");
+
+  const title = doc.querySelector("title");
+  const description = doc.querySelector('meta[name="description"]');
+  const robots = doc.querySelector('meta[name="robots"]');
+  const canonical = doc.querySelector('link[rel="canonical"]');
+  const viewport = doc.querySelector('meta[name="viewport"]');
+
+  const titleText = title ? title.textContent.trim() : "";
+  const descriptionText = description
+    ? description.getAttribute("content") || ""
+    : "";
+  const robotsText = robots
+    ? robots.getAttribute("content") || ""
+    : "";
+  const canonicalText = canonical
+    ? canonical.getAttribute("href") || ""
+    : "";
+  const viewportText = viewport
+    ? viewport.getAttribute("content") || ""
+    : "";
+
+  document.getElementById("titleResult").innerHTML =
+    titleText
+      ? '<span class="status good">Found:</span> ' + escapeHtml(titleText)
+      : '<span class="status bad">Missing</span>';
+
+  document.getElementById("descriptionResult").innerHTML =
+    descriptionText
+      ? '<span class="status good">Found:</span> ' + escapeHtml(descriptionText)
+      : '<span class="status bad">Missing</span>';
+
+  document.getElementById("robotsResult").innerHTML =
+    robotsText
+      ? '<span class="status good">Found:</span> ' + escapeHtml(robotsText)
+      : '<span class="status warning">Not found</span>';
+
+  document.getElementById("canonicalResult").innerHTML =
+    canonicalText
+      ? '<span class="status good">Found:</span> ' + escapeHtml(canonicalText)
+      : '<span class="status warning">Not found</span>';
+
+  document.getElementById("viewportResult").innerHTML =
+    viewportText
+      ? '<span class="status good">Found:</span> ' + escapeHtml(viewportText)
+      : '<span class="status warning">Not found</span>';
+
+  document.getElementById("results").style.display = "block";
+}
+
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
+</script>
+
+</body>
+</html>
