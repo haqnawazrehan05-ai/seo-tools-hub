@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Word Counter - Free Online Word Count Tool</title>
+
+  <meta name="description" content="Use our free Word Counter to count words, characters, sentences, and paragraphs in your content quickly and easily.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://haqnawazrehan05-ai.github.io/seo-tools-hub/tools/word-counter.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5eaf2;
+      padding: 18px 20px;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #172033;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #2864e8;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #172033;
+      margin-left: 25px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2864e8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: #2864e8;
+    }
+
+    .hero p {
+      color: #60708a;
+      font-size: 17px;
+    }
+
+    .tool-box {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(30, 50, 90, 0.08);
+      border: 1px solid #e7ebf3;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 260px;
+      padding: 15px;
+      border: 1px solid #ccd5e3;
+      border-radius: 10px;
+      font-size: 16px;
+      resize: vertical;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #2864e8;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .stat {
+      background: #f5f8ff;
+      border: 1px solid #e0e7f5;
+      padding: 18px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 27px;
+      color: #2864e8;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      font-size: 14px;
+      color: #52627a;
+    }
+
+    .info {
+      margin-top: 30px;
+      background: #ffffff;
+      border: 1px solid #e7ebf3;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .info h2 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 70px;
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .tool-box {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <a href="../index.html" class="logo">
+      <span>SEO</span> Tools Hub
+    </a>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="keyword-density-checker.html">SEO Tools</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Free <span>Word Counter</span></h1>
+
+    <p>
+      Count words, characters, sentences, and paragraphs in your content instantly.
+    </p>
+  </section>
+
+  <section class="tool-box">
+
+    <label for="content">Enter or paste your content</label>
+
+    <textarea
+      id="content"
+      placeholder="Start typing or paste your content here..."
+    ></textarea>
+
+    <div class="stats">
+
+      <div class="stat">
+        <strong id="words">0</strong>
+        <span>Words</span>
+      </div>
+
+      <div class="stat">
+        <strong id="characters">0</strong>
+        <span>Characters</span>
+      </div>
+
+      <div class="stat">
+        <strong id="sentences">0</strong>
+        <span>Sentences</span>
+      </div>
+
+      <div class="stat">
+        <strong id="paragraphs">0</strong>
+        <span>Paragraphs</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="info">
+
+    <h2>About This Word Counter</h2>
+
+    <p>
+      Our free Word Counter helps writers, bloggers, students, and website
+      owners quickly check the length of their content. It counts words,
+      characters, sentences, and paragraphs in real time.
+    </p>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 SEO Tools Hub. All rights reserved.</p>
+</footer>
+
+<script>
+
+const content = document.getElementById("content");
+
+function updateCount() {
+
+  const text = content.value;
+
+  const trimmedText = text.trim();
+
+  const words = trimmedText
+    ? trimmedText.split(/\s+/).filter(Boolean)
+    : [];
+
+  const wordCount = words.length;
+
+  const characterCount = text.length;
+
+  const sentenceMatches = trimmedText.match(/[.!?]+(?=\s|$)/g);
+  const sentenceCount = sentenceMatches ? sentenceMatches.length : 0;
+
+  const paragraphCount = trimmedText
+    ? trimmedText.split(/\n\s*\n/).filter(p => p.trim()).length
+    : 0;
+
+  document.getElementById("words").textContent = wordCount;
+
+  document.getElementById("characters").textContent = characterCount;
+
+  document.getElementById("sentences").textContent = sentenceCount;
+
+  document.getElementById("paragraphs").textContent = paragraphCount;
+}
+
+content.addEventListener("input", updateCount);
+
+</script>
+
+</body>
+</html>
