@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Keyword Research: A Complete Beginner's Guide | SEO Tools Hub</title>
+
+  <meta name="description" content="Learn how to do keyword research, find useful keywords, understand search intent, choose target keywords, and build an effective SEO content strategy.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://haqnawazrehan05-ai.github.io/seo-tools-hub/blog/keyword-research-guide.html">
+
+  <meta property="og:title" content="Keyword Research: A Complete Beginner's Guide">
+  <meta property="og:description" content="Learn how to find, evaluate, and use keywords effectively for SEO and content creation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://haqnawazrehan05-ai.github.io/seo-tools-hub/blog/keyword-research-guide.html">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #374151;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .category {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    article {
+      background: #ffffff;
+      padding: 45px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    article p {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    article h2 {
+      font-size: 30px;
+      margin: 42px 0 18px;
+      color: #111827;
+      line-height: 1.3;
+    }
+
+    article h3 {
+      font-size: 23px;
+      margin: 30px 0 12px;
+      color: #1f2937;
+    }
+
+    article ul,
+    article ol {
+      margin: 15px 0 25px 25px;
+    }
+
+    article li {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 20px;
+      margin: 25px 0;
+      border-radius: 8px;
+    }
+
+    .tool-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      padding: 25px;
+      margin: 30px 0;
+      border-radius: 12px;
+    }
+
+    .tool-box a {
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .tool-box a:hover {
+      text-decoration: underline;
+    }
+
+    .faq {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 18px;
+      margin-top: 18px;
+    }
+
+    .faq h3 {
+      margin-top: 0;
+    }
+
+    .back-links {
+      margin-top: 35px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .back-links a {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 10px 17px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      padding: 35px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 700px) {
+      .nav-container {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 50px 20px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      article {
+        padding: 25px 20px;
+      }
+
+      article h2 {
+        font-size: 26px;
+      }
+
+      article p,
+      article li {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Keyword Research: A Complete Beginner's Guide",
+    "description": "A beginner-friendly guide to keyword research, search intent, keyword selection, and SEO content planning.",
+    "author": {
+      "@type": "Organization",
+      "name": "SEO Tools Hub"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SEO Tools Hub"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://haqnawazrehan05-ai.github.io/seo-tools-hub/blog/keyword-research-guide.html"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is keyword research?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keyword research is the process of discovering and evaluating the words and phrases people use when searching for information, products, services, or answers online."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is keyword research important for SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keyword research helps you understand what your audience searches for and can help you choose relevant topics and phrases for your content."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is search intent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Search intent is the reason behind a user's search. It describes what the person is trying to accomplish with a query."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many keywords should a page target?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no fixed number. A page should focus on a clear primary topic and naturally cover closely related terms that are useful for the reader."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+
+    <a href="../index.html" class="logo">
+      SEO Tools Hub
+    </a>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../seo-tools.html">SEO Tools</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <span class="category">SEO Guide</span>
+
+    <h1>Keyword Research: A Complete Beginner's Guide</h1>
+
+    <p>
+      Learn how to find useful keywords, understand search intent,
+      choose target keywords, and create an effective SEO content strategy.
+    </p>
+
+  </div>
+
+</section>
+
+<main class="container">
+
+<article>
+
+  <p>
+    Keyword research is one of the foundations of search engine optimization.
+    Before creating an article, landing page, product page, or other type of
+    online content, it helps to understand what people are actually searching
+    for.
+  </p>
+
+  <p>
+    By researching relevant search terms, you can discover topics your audience
+    cares about, understand their questions, identify different types of search
+    intent, and create content that better matches their needs.
+  </p>
+
+  <div class="highlight">
+
+    <strong>In simple words:</strong>
+    Keyword research helps you discover the words and phrases people type into
+    search engines so you can create useful content around topics they actually
+    want to find.
+
+  </div>
+
+  <h2>What Is Keyword Research?</h2>
+
+  <p>
+    Keyword research is the process of finding and evaluating words and phrases
+    that people use when searching online.
+  </p>
+
+  <p>
+    These search terms can be short phrases such as
+    <strong>SEO tools</strong> or longer queries such as
+    <strong>how to improve SEO for a new website</strong>.
+  </p>
+
+  <p>
+    Effective keyword research is not simply about finding keywords with high
+    search volume. You also need to consider relevance, competition, search
+    intent, the quality of existing search results, and whether the topic is
+    appropriate for your website.
+  </p>
+
+  <h2>Why Is Keyword Research Important?</h2>
+
+  <h3>1. It Helps You Understand Your Audience</h3>
+
+  <p>
+    The language people use in search can reveal what they want to know,
+    what problems they are trying to solve, and what information they expect
+    to find.
+  </p>
+
+  <h3>2. It Helps You Find Content Ideas</h3>
+
+  <p>
+    Keyword research can uncover questions and related topics that can become
+    blog posts, guides, tutorials, comparison pages, category pages, or FAQs.
+  </p>
+
+  <h3>3. It Helps You Match Search Intent</h3>
+
+  <p>
+    Two keywords can appear similar but have completely different purposes.
+    Understanding search intent helps you create the right type of content
+    for each topic.
+  </p>
+
+  <h3>4. It Helps You Build a Content Strategy</h3>
+
+  <p>
+    Instead of publishing random articles, you can organize related topics
+    into groups and build a website that covers a subject comprehensively.
+  </p>
+
+  <h2>Types of Keywords</h2>
+
+  <h3>Short-Tail Keywords</h3>
+
+  <p>
+    Short-tail keywords are generally broad phrases containing relatively few
+    words. Examples include:
+  </p>
+
+  <ul>
+    <li>SEO</li>
+    <li>SEO tools</li>
+    <li>keyword research</li>
+    <li>digital marketing</li>
+  </ul>
+
+  <p>
+    These terms can have significant search demand, but they are often broad
+    and highly competitive.
+  </p>
+
+  <h3>Long-Tail Keywords</h3>
+
+  <p>
+    Long-tail keywords are more specific search phrases. Examples include:
+  </p>
+
+  <ul>
+    <li>best free SEO tools for beginners</li>
+    <li>how to do keyword research for a blog</li>
+    <li>how to improve SEO on a new website</li>
+  </ul>
+
+  <p>
+    Long-tail queries often provide more context about what the searcher wants.
+    They can therefore be especially useful when creating focused content.
+  </p>
+
+  <h3>Branded Keywords</h3>
+
+  <p>
+    Branded keywords contain the name of a company, product, website, or brand.
+    People searching for a specific brand may already have strong awareness
+    of that business.
+  </p>
+
+  <h3>Non-Branded Keywords</h3>
+
+  <p>
+    Non-branded keywords do not contain a specific brand name. They often
+    represent broader discovery searches.
+  </p>
+
+  <h2>What Is Search Intent?</h2>
+
+  <p>
+    Search intent is the reason a person performs a search. Understanding intent
+    is one of the most important parts of keyword research because the content
+    you create should satisfy what the searcher is trying to accomplish.
+  </p>
+
+  <h3>Informational Intent</h3>
+
+  <p>
+    The person wants to learn something.
+  </p>
+
+  <p>
+    Examples:
+  </p>
+
+  <ul>
+    <li>what is SEO</li>
+    <li>how does keyword research work</li>
+    <li>how to write a meta description</li>
+  </ul>
+
+  <h3>Navigational Intent</h3>
+
+  <p>
+    The person wants to find a particular website, brand, or webpage.
+  </p>
+
+  <h3>Commercial Investigation</h3>
+
+  <p>
+    The person is researching options before making a decision.
+  </p>
+
+  <p>
+    Examples may include searches for comparisons, reviews, alternatives,
+    or the best solutions for a particular need.
+  </p>
+
+  <h3>Transactional Intent</h3>
+
+  <p>
+    The person is ready to complete an action, such as buying something,
+    subscribing to a service, or signing up.
+  </p>
+
+  <h2>How to Start Keyword Research</h2>
+
+  <p>
+    Beginners do not need a complicated process. You can start by thinking
+    about your audience, your website topic, and the problems you want to solve.
+  </p>
+
+  <h3>Step 1: Define Your Main Topic</h3>
+
+  <p>
+    Start with the subject your website is focused on. For example, if your
+    website is about SEO, your broad topic could include SEO tools, keyword
+    research, on-page SEO, technical SEO, content optimization, and related
+    subjects.
+  </p>
+
+  <h3>Step 2: Create Seed Keywords</h3>
+
+  <p>
+    Seed keywords are broad starting terms from which you can discover more
+    specific ideas.
+  </p>
+
+  <p>
+    For an SEO website, seed keywords might include:
+  </p>
+
+  <ul>
+    <li>SEO</li>
+    <li>SEO tools</li>
+    <li>keyword research</li>
+    <li>on-page SEO</li>
+    <li>technical SEO</li>
+    <li>content SEO</li>
+  </ul>
+
+  <h3>Step 3: Find Related Search Queries</h3>
+
+  <p>
+    Expand your seed topics into specific questions and phrases. Think about
+    what beginners, customers, or readers might ask about each subject.
+  </p>
+
+  <h3>Step 4: Study Search Results</h3>
+
+  <p>
+    Search your target phrase and examine the results. Look at the types of
+    pages that appear, the topics they cover, and the questions they answer.
+  </p>
+
+  <p>
+    This can help you understand what search engines appear to consider useful
+    for that query and what kind of content users may expect.
+  </p>
+
+  <h3>Step 5: Evaluate the Keyword</h3>
+
+  <p>
+    Consider whether the keyword is relevant to your website, whether you can
+    create genuinely useful content for it, and whether the search intent
+    matches your planned page.
+  </p>
+
+  <h2>Important Keyword Research Metrics</h2>
+
+  <h3>Search Volume</h3>
+
+  <p>
+    Search volume estimates how frequently a keyword is searched during a
+    particular period. It can help you understand potential demand, but it
+    should never be the only factor you consider.
+  </p>
+
+  <h3>Keyword Competition</h3>
+
+  <p>
+    Competition describes how difficult it may be to compete for a particular
+    keyword. Different SEO tools calculate competition or difficulty using
+    different methods.
+  </p>
+
+  <h3>Search Intent</h3>
+
+  <p>
+    Intent tells you what the searcher is trying to accomplish. A keyword with
+    high search volume is not useful if its intent does not match your website
+    or content.
+  </p>
+
+  <h3>Relevance</h3>
+
+  <p>
+    Relevance is extremely important. A keyword should make sense for your
+    website and should lead to content that genuinely answers the user's need.
+  </p>
+
+  <h2>How to Choose the Right Keywords</h2>
+
+  <p>
+    Choosing keywords is a balance between relevance, search intent, opportunity,
+    and your ability to create better content.
+  </p>
+
+  <ol>
+
+    <li>
+      <strong>Choose relevant topics.</strong>
+      The keyword should be closely related to your website and audience.
+    </li>
+
+    <li>
+      <strong>Understand the intent.</strong>
+      Make sure you can provide the type of content the searcher wants.
+    </li>
+
+    <li>
+      <strong>Consider competition.</strong>
+      Highly competitive terms may require significant authority and resources.
+    </li>
+
+    <li>
+      <strong>Look for specific opportunities.</strong>
+      More focused queries can sometimes provide better opportunities for
+      smaller or newer websites.
+    </li>
+
+    <li>
+      <strong>Think beyond one keyword.</strong>
+      Build content around a topic and naturally include closely related
+      concepts and questions.
+    </li>
+
+  </ol>
+
+  <h2>Keyword Mapping</h2>
+
+  <p>
+    Keyword mapping means assigning target topics or keywords to specific pages
+    on your website.
+  </p>
+
+  <p>
+    For example, instead of creating several pages that all target the same
+    keyword, you might create one comprehensive guide for a broad topic and
+    separate supporting pages for closely related subtopics.
+  </p>
+
+  <p>
+    This approach can help keep your website organized and reduce unnecessary
+    overlap between pages.
+  </p>
+
+  <h2>Keyword Clustering</h2>
+
+  <p>
+    Keyword clustering groups closely related search queries around a common
+    topic. Many different searches can represent the same underlying information
+    need.
+  </p>
+
+  <p>
+    For example, searches about "SEO basics," "SEO for beginners," and
+    "beginner SEO guide" may have significant topical overlap. Instead of
+    automatically creating a separate page for every variation, consider
+    whether one strong resource can satisfy the broader need.
+  </p>
+
+  <h2>How to Use Keywords in Content</h2>
+
+  <p>
+    Once you have selected a topic, use relevant terminology naturally throughout
+    your content.
+  </p>
+
+  <p>
+    Important places may include:
+  </p>
+
+  <ul>
+    <li>Page title</li>
+    <li>Main heading</li>
+    <li>Relevant subheadings</li>
+    <li>Opening section</li>
+    <li>Body content</li>
+    <li>URL where appropriate</li>
+    <li>Internal links and anchor text where natural</li>
+    <li>Image descriptions or alt text when relevant</li>
+  </ul>
+
+  <p>
+    The key is natural language. Avoid repeating the same keyword unnecessarily.
+    Search engines are capable of understanding related words and concepts,
+    so your primary goal should be useful and readable content.
+  </p>
+
+  <div class="tool-box">
+
+    <strong>Useful SEO Tool:</strong>
+
+    <p>
+      After writing your content, you can use our
+      <a href="../tools/keyword-density-checker.html">
+        Keyword Density Checker
+      </a>
+      to review how frequently words and phrases appear in your text.
+    </p>
+
+    <p>
+      Remember that keyword density is only one basic content check and should
+      not be treated as a required ranking formula.
+    </p>
+
+  </div>
+
+  <h2>Keyword Stuffing: What to Avoid</h2>
+
+  <p>
+    Keyword stuffing means excessively repeating keywords or phrases in an
+    attempt to manipulate search rankings.
+  </p>
+
+  <p>
+    This can make content difficult to read and can create a poor experience
+    for visitors. Instead of trying to reach an arbitrary keyword frequency,
+    write naturally and cover the topic thoroughly.
+  </p>
+
+  <h2>Common Keyword Research Mistakes</h2>
+
+  <ul>
+
+    <li>
+      Choosing keywords only because they have high search volume.
+    </li>
+
+    <li>
+      Ignoring search intent.
+    </li>
+
+    <li>
+      Targeting keywords that are unrelated to your audience.
+    </li>
+
+    <li>
+      Creating multiple pages for nearly identical search intents.
+    </li>
+
+    <li>
+      Focusing entirely on exact-match keyword phrases.
+    </li>
+
+    <li>
+      Stuffing keywords into content unnaturally.
+    </li>
+
+    <li>
+      Forgetting to update content when search needs change.
+    </li>
+
+    <li>
+      Ignoring the quality and usefulness of the actual content.
+    </li>
+
+  </ul>
+
+  <h2>Keyword Research for a New Website</h2>
+
+  <p>
+    New websites often have limited authority, so it can be useful to begin
+    with focused topics where the website can provide strong value.
+  </p>
+
+  <p>
+    Instead of trying to rank immediately for extremely broad terms, build a
+    collection of useful resources around a specific area. As the website
+    develops, you can expand into broader topics.
+  </p>
+
+  <h3>Build Topic Clusters</h3>
+
+  <p>
+    Create a main guide covering an important topic and supporting articles
+    that answer related questions. Link these pages together where useful.
+  </p>
+
+  <h3>Focus on Quality</h3>
+
+  <p>
+    A smaller number of excellent articles can be more useful than publishing
+    large amounts of shallow content.
+  </p>
+
+  <h3>Understand Your Audience</h3>
+
+  <p>
+    Think about the actual problems your readers have. The best keyword strategy
+    starts with understanding people rather than simply collecting search terms.
+  </p>
+
+  <h2>Keyword Research Tools</h2>
+
+  <p>
+    Dedicated keyword research platforms can provide information such as
+    estimated search volume, keyword difficulty, related queries, trends,
+    competitor information, and other data.
+  </p>
+
+  <p>
+    However, keyword tools should support your research rather than completely
+    replace your judgment. Always consider the actual search results and the
+    needs of your audience.
+  </p>
+
+  <div class="tool-box">
+
+    <strong>More Free SEO Tools:</strong>
+
+    <p>
+      <a href="../tools/index.html">Explore all SEO Tools</a>
+    </p>
+
+    <p>
+      <a href="../tools/word-counter.html">Word Counter</a>
+    </p>
+
+    <p>
+      <a href="../tools/title-tag-checker.html">Title Tag Checker</a>
+    </p>
+
+    <p>
+      <a href="../tools/meta-description-checker.html">
+        Meta Description Checker
+      </a>
+    </p>
+
+    <p>
+      <a href="../tools/meta-tag-analyzer.html">
+        Meta Tag Analyzer
+      </a>
+    </p>
+
+  </div>
+
+  <h2>Keyword Research Checklist</h2>
+
+  <p>
+    Before targeting a keyword, ask yourself these questions:
+  </p>
+
+  <ul>
+
+    <li>Is this topic relevant to my website?</li>
+
+    <li>Does the search intent match my planned content?</li>
+
+    <li>Can I provide genuinely useful information?</li>
+
+    <li>Is the topic specific enough for my audience?</li>
+
+    <li>Have I reviewed the current search results?</li>
+
+    <li>Does this topic fit into my overall content strategy?</li>
+
+    <li>Can I connect this page naturally to other useful pages?</li>
+
+  </ul>
+
+  <h2>Frequently Asked Questions About Keyword Research</h2>
+
+  <div class="faq">
+
+    <h3>What is keyword research?</h3>
+
+    <p>
+      Keyword research is the process of discovering and evaluating the words
+      and phrases people use when searching for information, products, services,
+      or answers online.
+    </p>
+
+  </div>
+
+  <div class="faq">
+
+    <h3>Why is keyword research important for SEO?</h3>
+
+    <p>
+      Keyword research helps you understand what your audience searches for
+      and can help you choose relevant topics and phrases for your content.
+    </p>
+
+  </div>
+
+  <div class="faq">
+
+    <h3>What is search intent?</h3>
+
+    <p>
+      Search intent is the reason behind a user's search. It describes what
+      the person is trying to accomplish with a query.
+    </p>
+
+  </div>
+
+  <div class="faq">
+
+    <h3>How many keywords should a page target?</h3>
+
+    <p>
+      There is no fixed number. A page should focus on a clear primary topic
+      and naturally cover closely related terms that are useful for the reader.
+    </p>
+
+  </div>
+
+  <h2>Final Thoughts</h2>
+
+  <p>
+    Keyword research is not about finding a list of phrases and inserting them
+    into an article as many times as possible. It is about understanding what
+    people want, how they search, and how your website can provide the best
+    possible answer.
+  </p>
+
+  <p>
+    Start with your audience, identify relevant topics, understand search intent,
+    examine the search results, and create genuinely helpful content. Over time,
+    this approach can give your website a stronger and more organized SEO
+    foundation.
+  </p>
+
+  <div class="back-links">
+
+    <a href="../blog.html">
+      ← Back to SEO Blog
+    </a>
+
+    <a href="../tools/index.html">
+      Explore SEO Tools
+    </a>
+
+  </div>
+
+</article>
+
+</main>
+
+<footer>
+
+  <p>
+    © 2026 SEO Tools Hub. All rights reserved.
+  </p>
+
+  <p style="margin-top: 10px;">
+
+    <a href="../index.html">Home</a>
+
+    <a href="../blog.html">Blog</a>
+
+    <a href="../about.html">About</a>
+
+    <a href="../contact.html">Contact</a>
+
+    <a href="../privacy.html">Privacy Policy</a>
+
+    <a href="../terms.html">Terms & Conditions</a>
+
+  </p>
+
+</footer>
+
+</body>
+</html>
