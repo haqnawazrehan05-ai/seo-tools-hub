@@ -5,35 +5,59 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Free SEO Tools Hub - Powerful SEO Tools for Websites</title>
+  <title>Free SEO Tools to Find & Fix Website SEO Issues</title>
 
-  <meta name="description"
-        content="Free SEO tools for website owners, bloggers, developers and marketers. Check keyword density, meta tags, headings, robots.txt, sitemaps, JSON-LD and more.">
+  <meta
+    name="description"
+    content="Use free SEO tools to analyze, optimize, and improve your website. Check keywords, meta tags, headings, robots.txt, sitemap, JSON-LD, hreflang, Open Graph and more."
+  >
+
+  <meta
+    name="keywords"
+    content="free SEO tools, SEO tools, website SEO checker, SEO analyzer, keyword density checker, meta tag analyzer, sitemap validator, robots.txt tester"
+  >
 
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical"
-        href="https://haqnawazrehan05-ai.github.io/seo-tools-hub/">
+  <meta name="author" content="SEO Tools Hub">
 
-  <meta property="og:title"
-        content="Free SEO Tools Hub - Powerful SEO Tools">
+  <link rel="canonical" href="https://haqnawazrehan05-ai.github.io/seo-tools-hub/">
 
-  <meta property="og:description"
-        content="Use our free browser-based SEO tools to analyze, validate and optimize your website.">
-
+  <meta property="og:title" content="Free SEO Tools to Find & Fix Website SEO Issues">
+  <meta
+    property="og:description"
+    content="Analyze and improve your website with free, simple and useful SEO tools."
+  >
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haqnawazrehan05-ai.github.io/seo-tools-hub/">
 
-  <meta property="og:url"
-        content="https://haqnawazrehan05-ai.github.io/seo-tools-hub/">
-
-  <meta name="theme-color" content="#2563eb">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Free SEO Tools to Find & Fix Website SEO Issues">
+  <meta
+    name="twitter:description"
+    content="Free SEO tools for website analysis, optimization and technical SEO."
+  >
 
   <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --border: #e2e8f0;
+      --success: #16a34a;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 16px;
+      --max-width: 1180px;
+    }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -41,9 +65,16 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f8fafc;
-      color: #1e293b;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      background: var(--white);
+      color: var(--text);
       line-height: 1.6;
     }
 
@@ -52,413 +83,653 @@
       color: inherit;
     }
 
-    .container {
-      width: 92%;
-      max-width: 1180px;
-      margin: auto;
+    img {
+      max-width: 100%;
+      display: block;
     }
 
-    /* HEADER */
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #e2e8f0;
       position: sticky;
       top: 0;
       z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
     }
 
     .navbar {
-      min-height: 72px;
+      min-height: 74px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
     }
 
+    /* SEO TOOLS LOGO */
+
     .logo {
-      font-size: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-weight: 800;
-      color: #2563eb;
+      color: var(--secondary);
       white-space: nowrap;
     }
 
-    .logo span {
-      color: #0f172a;
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-mark::before {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      border: 3px solid #ffffff;
+      border-radius: 50%;
+      opacity: 0.95;
+    }
+
+    .logo-mark::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 3px;
+      background: #ffffff;
+      transform: rotate(45deg);
+      right: 7px;
+      bottom: 9px;
+      border-radius: 5px;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .logo-main {
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-sub {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 1.7px;
+      margin-top: 5px;
+      font-weight: 700;
     }
 
     .nav-links {
+      list-style: none;
       display: flex;
       align-items: center;
-      gap: 25px;
-      list-style: none;
+      gap: 7px;
     }
 
     .nav-links a {
-      font-size: 15px;
+      display: block;
+      padding: 10px 13px;
+      border-radius: 9px;
+      color: #475569;
+      font-size: 14px;
       font-weight: 600;
-      color: #334155;
+      transition: 0.2s ease;
     }
 
-    .nav-links a:hover {
-      color: #2563eb;
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+      background: #eff6ff;
     }
 
     .mobile-menu {
       display: none;
-      border: none;
-      background: #f1f5f9;
-      font-size: 22px;
-      padding: 8px 12px;
-      border-radius: 7px;
+      border: 0;
+      background: #eff6ff;
+      color: var(--primary);
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      font-size: 21px;
       cursor: pointer;
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
-      padding: 85px 0 70px;
-      background: linear-gradient(135deg, #eff6ff, #ffffff);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.12), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(124, 58, 237, 0.10), transparent 30%),
+        linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+      padding: 90px 0 80px;
+      border-bottom: 1px solid #eef2f7;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
       text-align: center;
     }
 
     .hero-badge {
-      display: inline-block;
-      background: #dbeafe;
-      color: #1d4ed8;
-      padding: 7px 15px;
-      border-radius: 30px;
-      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #dbeafe;
+      font-size: 13px;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge span {
+      width: 7px;
+      height: 7px;
+      background: var(--success);
+      border-radius: 50%;
     }
 
     .hero h1 {
-      max-width: 900px;
-      margin: auto;
-      font-size: 48px;
-      line-height: 1.15;
-      color: #0f172a;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      color: var(--secondary);
+      margin-bottom: 22px;
     }
 
     .hero h1 span {
-      color: #2563eb;
+      color: var(--primary);
     }
 
     .hero p {
-      max-width: 760px;
-      margin: 20px auto 30px;
-      color: #475569;
+      max-width: 720px;
+      margin: 0 auto 30px;
       font-size: 18px;
+      color: var(--muted);
     }
 
     .hero-buttons {
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 12px;
       flex-wrap: wrap;
+      gap: 12px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 13px 23px;
-      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 10px;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 14px;
+      transition: 0.2s ease;
     }
 
     .btn-primary {
-      background: #2563eb;
-      color: #ffffff;
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
     }
 
     .btn-primary:hover {
-      background: #1d4ed8;
+      background: var(--primary-dark);
+      transform: translateY(-2px);
     }
 
     .btn-secondary {
-      background: #ffffff;
-      border: 1px solid #cbd5e1;
-      color: #1e293b;
+      background: white;
+      color: var(--secondary);
+      border: 1px solid var(--border);
     }
 
     .btn-secondary:hover {
-      background: #f1f5f9;
+      border-color: #bfdbfe;
+      background: #f8fbff;
     }
 
-    /* SEARCH */
-
-    .tool-search-section {
-      margin-top: -25px;
-      position: relative;
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 700px;
+      margin: 55px auto 0;
+      border: 1px solid var(--border);
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
     }
 
-    .search-box {
-      background: #ffffff;
-      padding: 22px;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid #e2e8f0;
+    .stat {
+      padding: 20px;
+      border-right: 1px solid var(--border);
     }
 
-    .search-box input {
-      width: 100%;
-      padding: 15px 17px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 16px;
-      outline: none;
+    .stat:last-child {
+      border-right: 0;
     }
 
-    .search-box input:focus {
-      border-color: #2563eb;
+    .stat strong {
+      display: block;
+      font-size: 25px;
+      color: var(--secondary);
     }
 
-    /* GENERAL SECTION */
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
 
     section {
-      padding: 75px 0;
+      padding: 80px 0;
     }
 
     .section-heading {
+      max-width: 700px;
+      margin: 0 auto 40px;
       text-align: center;
-      margin-bottom: 42px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
     }
 
     .section-heading h2 {
-      font-size: 34px;
-      color: #0f172a;
-      margin-bottom: 10px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      color: var(--secondary);
+      letter-spacing: -1px;
+      margin-bottom: 12px;
     }
 
     .section-heading p {
-      max-width: 700px;
-      margin: auto;
-      color: #64748b;
-      font-size: 16px;
+      color: var(--muted);
     }
 
-    /* CATEGORY */
+    /* =========================
+       SEARCH
+    ========================= */
+
+    .tool-search-wrapper {
+      max-width: 650px;
+      margin: 0 auto 45px;
+      position: relative;
+    }
+
+    .tool-search {
+      width: 100%;
+      height: 56px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0 20px 0 48px;
+      font-size: 15px;
+      outline: none;
+      box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+    }
+
+    .tool-search:focus {
+      border-color: #93c5fd;
+      box-shadow: 0 0 0 4px #eff6ff;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 17px;
+      top: 16px;
+      font-size: 21px;
+      color: #94a3b8;
+    }
+
+    /* =========================
+       TOOL CATEGORIES
+    ========================= */
+
+    .tool-category {
+      margin-bottom: 55px;
+    }
 
     .category-title {
-      margin: 45px 0 20px;
-      font-size: 24px;
-      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
     }
 
-    /* TOOLS GRID */
+    .category-title .category-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #eff6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+    }
+
+    .category-title h3 {
+      color: var(--secondary);
+      font-size: 22px;
+    }
+
+    .category-title p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 1px;
+    }
 
     .tools-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
     .tool-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 22px;
-      transition: 0.2s ease;
+      transition: 0.25s ease;
+      box-shadow: 0 3px 12px rgba(15, 23, 42, 0.03);
       display: flex;
       flex-direction: column;
-      min-height: 205px;
+      min-height: 190px;
     }
 
     .tool-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
       border-color: #bfdbfe;
+      box-shadow: 0 15px 30px rgba(15, 23, 42, 0.09);
     }
 
     .tool-icon {
-      width: 46px;
-      height: 46px;
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: #eff6ff;
+      color: var(--primary);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #eff6ff;
-      color: #2563eb;
-      border-radius: 9px;
-      font-size: 21px;
-      font-weight: 800;
+      font-size: 20px;
       margin-bottom: 15px;
     }
 
-    .tool-card h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      color: #0f172a;
+    .tool-card h4 {
+      font-size: 17px;
+      color: var(--secondary);
+      margin-bottom: 7px;
     }
 
     .tool-card p {
-      font-size: 14px;
-      color: #64748b;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
       margin-bottom: 17px;
-      flex-grow: 1;
     }
 
     .tool-link {
-      color: #2563eb;
-      font-weight: 700;
-      font-size: 14px;
+      margin-top: auto;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
     }
 
     .tool-link:hover {
-      text-decoration: underline;
+      color: var(--primary-dark);
     }
 
-    /* ABOUT */
-
-    .about-section {
-      background: #ffffff;
+    .no-results {
+      display: none;
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 45px;
-      align-items: center;
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features-section {
+      background: var(--light);
     }
 
-    .about-content h2 {
-      font-size: 34px;
-      color: #0f172a;
-      margin-bottom: 18px;
-    }
-
-    .about-content p {
-      color: #64748b;
-      margin-bottom: 15px;
-    }
-
-    .feature-list {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    .feature-list li {
-      margin-bottom: 13px;
-      color: #334155;
-      font-weight: 600;
-    }
-
-    .feature-list li::before {
-      content: "✓";
-      color: #16a34a;
-      font-weight: 900;
-      margin-right: 10px;
-    }
-
-    .about-box {
-      background: #eff6ff;
-      padding: 35px;
-      border-radius: 15px;
-      border: 1px solid #dbeafe;
-    }
-
-    .about-box h3 {
-      color: #1e3a8a;
-      margin-bottom: 15px;
-      font-size: 23px;
-    }
-
-    .about-box p {
-      color: #475569;
-    }
-
-    /* HOW IT WORKS */
-
-    .steps-grid {
+    .features-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .step-card {
-      background: #ffffff;
+    .feature-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 28px;
-      border: 1px solid #e2e8f0;
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
       border-radius: 12px;
-      text-align: center;
+      background: #eff6ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      margin-bottom: 17px;
+    }
+
+    .feature-card h3 {
+      color: var(--secondary);
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       HOW IT WORKS
+    ========================= */
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      counter-reset: steps;
+    }
+
+    .step {
+      position: relative;
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
     }
 
     .step-number {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto 15px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      background: #2563eb;
-      color: #ffffff;
+      background: var(--primary);
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 19px;
+      margin-bottom: 18px;
     }
 
-    .step-card h3 {
-      margin-bottom: 9px;
-      color: #0f172a;
-    }
-
-    .step-card p {
-      color: #64748b;
-      font-size: 14px;
-    }
-
-    /* FAQ */
-
-    .faq-list {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .faq-item {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 9px;
-      padding: 20px;
-      margin-bottom: 13px;
-    }
-
-    .faq-item h3 {
-      font-size: 17px;
-      color: #0f172a;
+    .step h3 {
+      color: var(--secondary);
       margin-bottom: 8px;
     }
 
-    .faq-item p {
-      color: #64748b;
-      font-size: 15px;
+    .step p {
+      color: var(--muted);
+      font-size: 14px;
     }
 
-    /* CTA */
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-section {
+      background: var(--light);
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 42px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-box h2 {
+      color: var(--secondary);
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+
+    .about-box p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq-list {
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      padding: 19px 21px;
+      font-weight: 700;
+      color: var(--secondary);
+      list-style: none;
+      position: relative;
+      padding-right: 50px;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      font-size: 22px;
+      color: var(--primary);
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 21px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
 
     .cta {
-      background: #1d4ed8;
-      color: #ffffff;
-      text-align: center;
-      padding: 65px 20px;
+      padding: 75px 0;
     }
 
-    .cta h2 {
-      font-size: 34px;
+    .cta-box {
+      background:
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.16), transparent 28%),
+        linear-gradient(135deg, #1d4ed8, #4f46e5);
+      border-radius: 22px;
+      padding: 55px 30px;
+      text-align: center;
+      color: white;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
       margin-bottom: 12px;
     }
 
-    .cta p {
-      max-width: 700px;
+    .cta-box p {
+      max-width: 650px;
       margin: 0 auto 25px;
-      color: #dbeafe;
+      color: rgba(255,255,255,0.86);
     }
 
-    .cta .btn {
-      background: #ffffff;
-      color: #1d4ed8;
+    .cta-box .btn {
+      background: white;
+      color: var(--primary);
     }
 
-    /* FOOTER */
+    .cta-box .btn:hover {
+      background: #f8fafc;
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       background: #0f172a;
@@ -469,64 +740,80 @@
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 35px;
-      margin-bottom: 35px;
+      gap: 40px;
+      padding-bottom: 40px;
     }
 
-    .footer-brand h3 {
-      color: #ffffff;
-      font-size: 22px;
-      margin-bottom: 12px;
+    .footer-brand .logo {
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .footer-brand .logo-sub {
+      color: #94a3b8;
     }
 
     .footer-brand p {
+      max-width: 370px;
       color: #94a3b8;
       font-size: 14px;
-      max-width: 400px;
     }
 
     .footer-column h4 {
-      color: #ffffff;
-      margin-bottom: 13px;
+      color: white;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      display: grid;
+      gap: 9px;
     }
 
     .footer-column a {
-      display: block;
       color: #94a3b8;
-      margin-bottom: 8px;
-      font-size: 14px;
+      font-size: 13px;
+      transition: 0.2s ease;
     }
 
     .footer-column a:hover {
-      color: #ffffff;
+      color: white;
     }
 
-    .copyright {
+    .footer-bottom {
       border-top: 1px solid #1e293b;
       padding-top: 22px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
       color: #64748b;
-      font-size: 13px;
+      font-size: 12px;
     }
 
-    /* MOBILE */
+    /* =========================
+       RESPONSIVE
+    ========================= */
 
-    @media (max-width: 1000px) {
-
+    @media (max-width: 950px) {
       .tools-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features-grid,
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .footer-grid {
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
-
     }
 
-    @media (max-width: 750px) {
-
+    @media (max-width: 760px) {
       .navbar {
-        min-height: 65px;
+        min-height: 66px;
       }
 
       .mobile-menu {
@@ -534,72 +821,84 @@
       }
 
       .nav-links {
-        display: none;
         position: absolute;
-        top: 65px;
+        top: 66px;
         left: 0;
         right: 0;
-        background: #ffffff;
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 5%;
-        border-bottom: 1px solid #e2e8f0;
+        align-items: stretch;
+        gap: 3px;
+        padding: 12px;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.07);
       }
 
-      .nav-links.active {
+      .nav-links.show {
         display: flex;
       }
 
+      .nav-links a {
+        padding: 12px 14px;
+      }
+
       .hero {
-        padding: 60px 0;
+        padding: 65px 0 55px;
       }
 
       .hero h1 {
-        font-size: 36px;
+        letter-spacing: -1.5px;
       }
 
       .hero p {
         font-size: 16px;
       }
 
-      .tools-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .about-grid {
+      .hero-stats {
         grid-template-columns: 1fr;
       }
 
-      .steps-grid {
+      .stat {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .stat:last-child {
+        border-bottom: 0;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .tools-grid,
+      .features-grid,
+      .steps {
         grid-template-columns: 1fr;
       }
 
       .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
 
+      .about-box {
+        padding: 28px 22px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
     }
 
-    @media (max-width: 500px) {
-
-      .container {
-        width: 94%;
+    @media (max-width: 480px) {
+      .logo-main {
+        font-size: 18px;
       }
 
-      .hero h1 {
-        font-size: 30px;
-      }
-
-      .section-heading h2 {
-        font-size: 28px;
-      }
-
-      .tools-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
+      .logo-mark {
+        width: 40px;
+        height: 40px;
       }
 
       .hero-buttons {
@@ -610,938 +909,1208 @@
         width: 100%;
       }
 
+      .tool-card {
+        padding: 19px;
+      }
     }
-
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+  <!-- =========================
+       HEADER
+  ========================= -->
 
-<header>
+  <header>
+    <div class="container navbar">
 
-  <div class="container navbar">
+      <a href="index.html" class="logo" aria-label="SEO Tools Hub Home">
 
-    <a href="index.html" class="logo">
-      SEO <span>Tools Hub</span>
-    </a>
+        <div class="logo-mark" aria-hidden="true"></div>
 
-    <button class="mobile-menu" onclick="toggleMenu()">
-      ☰
-    </button>
+        <div class="logo-text">
+          <div class="logo-main">SEO TOOLS</div>
+          <div class="logo-sub">TOOLS HUB</div>
+        </div>
 
-    <ul class="nav-links" id="navLinks">
-
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-
-      <li>
-        <a href="tools/index.html">SEO Tools</a>
-      </li>
-
-      <li>
-        <a href="blog/index.html">Blog</a>
-      </li>
-
-      <li>
-        <a href="about.html">About</a>
-      </li>
-
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-
-    </ul>
-
-  </div>
-
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-  <div class="container">
-
-    <div class="hero-badge">
-      Free Browser-Based SEO Tools
-    </div>
-
-    <h1>
-      Simple & Powerful
-      <span>SEO Tools</span>
-      for Your Website
-    </h1>
-
-    <p>
-      Analyze, validate and optimize your website with free SEO tools
-      designed for bloggers, website owners, developers and digital marketers.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a href="#tools" class="btn btn-primary">
-        Explore SEO Tools
       </a>
 
-      <a href="blog/index.html" class="btn btn-secondary">
-        Read SEO Guides
-      </a>
+      <button
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+
+        <li>
+          <a href="tools/index.html">SEO Tools</a>
+        </li>
+
+        <li>
+          <a href="blog/index.html">Blog</a>
+        </li>
+
+        <li>
+          <a href="about.html">About</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-badge">
+            <span></span>
+            Free & Easy-to-Use SEO Tools
+          </div>
+
+          <h1>
+            Free SEO Tools to
+            <span>Find &amp; Fix</span>
+            Website SEO Issues
+          </h1>
+
+          <p>
+            Analyze your website content, improve on-page SEO, and find common
+            SEO issues with fast, simple, and completely free tools.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#seo-tools" class="btn btn-primary">
+              Explore Free SEO Tools →
+            </a>
+
+            <a href="tools/index.html" class="btn btn-secondary">
+              View All Tools
+            </a>
+
+          </div>
+
+          <div class="hero-stats">
+
+            <div class="stat">
+              <strong>21+</strong>
+              <span>SEO Tools</span>
+            </div>
+
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Free to Use</span>
+            </div>
+
+            <div class="stat">
+              <strong>Fast</strong>
+              <span>Browser-Based Tools</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SEO TOOLS
+    ========================= -->
+
+    <section id="seo-tools">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            SEO Toolkit
+          </div>
+
+          <h2>
+            Find the Right SEO Tool for Your Website
+          </h2>
+
+          <p>
+            Choose a tool below to analyze content, check technical SEO,
+            generate SEO elements, and improve your website.
+          </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="tool-search-wrapper">
+
+          <span class="search-icon">⌕</span>
+
+          <input
+            type="search"
+            id="toolSearch"
+            class="tool-search"
+            placeholder="Search SEO tools..."
+            aria-label="Search SEO tools"
+          >
+
+        </div>
+
+
+        <!-- =========================
+             CONTENT & ON-PAGE SEO
+        ========================= -->
+
+        <div class="tool-category">
+
+          <div class="category-title">
+
+            <div class="category-icon">
+              📝
+            </div>
+
+            <div>
+              <h3>Content &amp; On-Page SEO</h3>
+              <p>Analyze and improve the important elements of your pages.</p>
+            </div>
+
+          </div>
+
+          <div class="tools-grid">
+
+
+            <article class="tool-card" data-tool="keyword density checker">
+
+              <div class="tool-icon">🔎</div>
+
+              <h4>Keyword Density Checker</h4>
+
+              <p>
+                Check keyword usage and density in your content.
+              </p>
+
+              <a href="tools/keyword-density-checker.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="word counter">
+
+              <div class="tool-icon">🔢</div>
+
+              <h4>Word Counter</h4>
+
+              <p>
+                Count words, characters, sentences and paragraphs in your text.
+              </p>
+
+              <a href="tools/word-counter.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="meta tag analyzer">
+
+              <div class="tool-icon">🏷️</div>
+
+              <h4>Meta Tag Analyzer</h4>
+
+              <p>
+                Analyze important meta tags and SEO information.
+              </p>
+
+              <a href="tools/meta-tag-analyzer.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="title tag checker">
+
+              <div class="tool-icon">📌</div>
+
+              <h4>Title Tag Checker</h4>
+
+              <p>
+                Check your page title for SEO length and optimization.
+              </p>
+
+              <a href="tools/title-tag-checker.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="meta description checker">
+
+              <div class="tool-icon">📄</div>
+
+              <h4>Meta Description Checker</h4>
+
+              <p>
+                Check meta description length and basic SEO requirements.
+              </p>
+
+              <a href="tools/meta-description-checker.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="heading structure analyzer">
+
+              <div class="tool-icon">H</div>
+
+              <h4>Heading Structure Analyzer</h4>
+
+              <p>
+                Analyze H1 to H6 headings and identify structural issues.
+              </p>
+
+              <a href="tools/heading-structure-analyzer.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="readability checker">
+
+              <div class="tool-icon">📖</div>
+
+              <h4>Readability Checker</h4>
+
+              <p>
+                Analyze text readability and make content easier to understand.
+              </p>
+
+              <a href="tools/readability-checker.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="text case converter">
+
+              <div class="tool-icon">Aa</div>
+
+              <h4>Text Case Converter</h4>
+
+              <p>
+                Convert text into uppercase, lowercase, title case and more.
+              </p>
+
+              <a href="tools/text-case-converter.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             TECHNICAL SEO
+        ========================= -->
+
+        <div class="tool-category">
+
+          <div class="category-title">
+
+            <div class="category-icon">
+              ⚙️
+            </div>
+
+            <div>
+              <h3>Technical SEO Tools</h3>
+              <p>Check important technical SEO files and page elements.</p>
+            </div>
+
+          </div>
+
+          <div class="tools-grid">
+
+
+            <article class="tool-card" data-tool="robots txt tester">
+
+              <div class="tool-icon">🤖</div>
+
+              <h4>Robots.txt Tester</h4>
+
+              <p>
+                Test robots.txt rules and understand crawler permissions.
+              </p>
+
+              <a href="tools/robots-txt-tester.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="robots txt generator">
+
+              <div class="tool-icon">🛠️</div>
+
+              <h4>Robots.txt Generator</h4>
+
+              <p>
+                Generate a robots.txt file for your website.
+              </p>
+
+              <a href="tools/robots-txt-generator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="xml sitemap validator">
+
+              <div class="tool-icon">🗺️</div>
+
+              <h4>XML Sitemap Validator</h4>
+
+              <p>
+                Validate XML sitemap structure and identify common errors.
+              </p>
+
+              <a href="tools/xml-sitemap-validator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="sitemap url extractor">
+
+              <div class="tool-icon">🔗</div>
+
+              <h4>Sitemap URL Extractor</h4>
+
+              <p>
+                Extract URLs from an XML sitemap quickly.
+              </p>
+
+              <a href="tools/sitemap-url-extractor.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="json ld validator schema validator">
+
+              <div class="tool-icon">{ }</div>
+
+              <h4>JSON-LD Validator</h4>
+
+              <p>
+                Validate JSON-LD structured data syntax and common properties.
+              </p>
+
+              <a href="tools/json-ld-validator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="web manifest validator">
+
+              <div class="tool-icon">📱</div>
+
+              <h4>Web Manifest Validator</h4>
+
+              <p>
+                Check web app manifest JSON for important properties.
+              </p>
+
+              <a href="tools/web-manifest-validator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="viewport meta checker">
+
+              <div class="tool-icon">📐</div>
+
+              <h4>Viewport Meta Checker</h4>
+
+              <p>
+                Check whether your page has a useful viewport meta tag.
+              </p>
+
+              <a href="tools/viewport-meta-checker.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="html lang checker">
+
+              <div class="tool-icon">🌐</div>
+
+              <h4>HTML Lang Checker</h4>
+
+              <p>
+                Check the HTML language attribute of your page.
+              </p>
+
+              <a href="tools/html-lang-checker.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="favicon validator">
+
+              <div class="tool-icon">⭐</div>
+
+              <h4>Favicon Validator</h4>
+
+              <p>
+                Check common favicon implementation elements.
+              </p>
+
+              <a href="tools/favicon-validator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             SEO GENERATORS
+        ========================= -->
+
+        <div class="tool-category">
+
+          <div class="category-title">
+
+            <div class="category-icon">
+              ✨
+            </div>
+
+            <div>
+              <h3>SEO Generators</h3>
+              <p>Create useful SEO elements faster.</p>
+            </div>
+
+          </div>
+
+          <div class="tools-grid">
+
+
+            <article class="tool-card" data-tool="meta tag generator">
+
+              <div class="tool-icon">🏷️</div>
+
+              <h4>Meta Tag Generator</h4>
+
+              <p>
+                Generate essential meta tags for your HTML pages.
+              </p>
+
+              <a href="tools/meta-tag-generator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="hreflang generator">
+
+              <div class="tool-icon">🌍</div>
+
+              <h4>Hreflang Generator</h4>
+
+              <p>
+                Generate hreflang tags for multilingual websites.
+              </p>
+
+              <a href="tools/hreflang-generator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="hreflang validator">
+
+              <div class="tool-icon">✓</div>
+
+              <h4>Hreflang Validator</h4>
+
+              <p>
+                Check hreflang markup for common implementation problems.
+              </p>
+
+              <a href="tools/hreflang-validator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+
+            <article class="tool-card" data-tool="open graph generator og generator">
+
+              <div class="tool-icon">🔗</div>
+
+              <h4>Open Graph Generator</h4>
+
+              <p>
+                Generate Open Graph meta tags for social sharing.
+              </p>
+
+              <a href="tools/open-graph-generator.html" class="tool-link">
+                Use Tool →
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <div class="no-results" id="noResults">
+          No SEO tool found. Try another search.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURES
+    ========================= -->
+
+    <section class="features-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Why Use SEO Tools Hub?
+          </div>
+
+          <h2>
+            Simple Tools Without Unnecessary Complexity
+          </h2>
+
+          <p>
+            Get useful SEO information quickly without complicated dashboards.
+          </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+
+            <div class="feature-icon">
+              ⚡
+            </div>
+
+            <h3>Fast &amp; Simple</h3>
+
+            <p>
+              Our tools are designed to give you useful results quickly with
+              simple interfaces that are easy to understand.
+            </p>
+
+          </div>
+
+
+          <div class="feature-card">
+
+            <div class="feature-icon">
+              🆓
+            </div>
+
+            <h3>Free to Use</h3>
+
+            <p>
+              Use our SEO tools without complicated subscriptions or unnecessary
+              barriers.
+            </p>
+
+          </div>
+
+
+          <div class="feature-card">
+
+            <div class="feature-icon">
+              📊
+            </div>
+
+            <h3>Useful SEO Checks</h3>
+
+            <p>
+              Analyze content, metadata, technical SEO elements and other
+              important website factors.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================= -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            How It Works
+          </div>
+
+          <h2>
+            Analyze Your SEO in Three Simple Steps
+          </h2>
+
+          <p>
+            Choose a tool, enter your information, and review the results.
+          </p>
+
+        </div>
+
+
+        <div class="steps">
+
+          <div class="step">
+
+            <div class="step-number">
+              1
+            </div>
+
+            <h3>Choose a Tool</h3>
+
+            <p>
+              Select the SEO tool that matches what you want to analyze or
+              generate.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              2
+            </div>
+
+            <h3>Enter Your Data</h3>
+
+            <p>
+              Paste your text, HTML, JSON, XML or other required information
+              into the tool.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              3
+            </div>
+
+            <h3>Check the Results</h3>
+
+            <p>
+              Review the results and use the information to improve your
+              website SEO.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="about-section" id="about">
+
+      <div class="container">
+
+        <div class="about-box">
+
+          <h2>
+            About SEO Tools Hub
+          </h2>
+
+          <p>
+            SEO Tools Hub is a collection of simple and useful tools designed
+            to help website owners, bloggers, developers, and content creators
+            analyze and improve important SEO elements.
+          </p>
+
+          <p>
+            From keyword analysis and meta tags to technical SEO files and
+            structured data, our tools are organized to make common SEO tasks
+            easier.
+          </p>
+
+          <p>
+            The goal is simple: provide practical SEO tools that are easy to
+            understand and convenient to use.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FAQ
+    ========================= -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            FAQ
+          </div>
+
+          <h2>
+            Frequently Asked Questions
+          </h2>
+
+          <p>
+            Common questions about using SEO Tools Hub.
+          </p>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+          <details class="faq-item">
+
+            <summary>
+              Are these SEO tools free to use?
+            </summary>
+
+            <div class="faq-answer">
+              Yes. SEO Tools Hub is designed to provide free tools for common
+              website analysis, content optimization and technical SEO tasks.
+            </div>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Do I need to install software?
+            </summary>
+
+            <div class="faq-answer">
+              No. The tools are designed to work directly in your web browser,
+              so there is no software installation required.
+            </div>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Can these tools help improve my website SEO?
+            </summary>
+
+            <div class="faq-answer">
+              The tools can help you identify and analyze common SEO elements.
+              You can use the results to make informed improvements to your
+              website.
+            </div>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Which SEO tools are available?
+            </summary>
+
+            <div class="faq-answer">
+              SEO Tools Hub includes content analysis tools, technical SEO
+              checkers, metadata tools, structured data tools and SEO
+              generators. More tools can be added over time.
+            </div>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Can I use these tools on mobile?
+            </summary>
+
+            <div class="faq-answer">
+              Yes. The website is designed to be responsive so the tools can
+              also be accessed from phones and tablets.
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================= -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <h2>
+            Ready to Check Your Website SEO?
+          </h2>
+
+          <p>
+            Choose a free SEO tool and start finding opportunities to improve
+            your website today.
+          </p>
+
+          <a href="tools/index.html" class="btn">
+            Explore All SEO Tools →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">
+
+            <div class="logo-mark" aria-hidden="true"></div>
+
+            <div class="logo-text">
+
+              <div class="logo-main">
+                SEO TOOLS
+              </div>
+
+              <div class="logo-sub">
+                TOOLS HUB
+              </div>
+
+            </div>
+
+          </a>
+
+          <p>
+            Free and simple SEO tools for website owners, bloggers,
+            developers and content creators.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>SEO Tools</h4>
+
+          <ul>
+
+            <li>
+              <a href="tools/index.html">
+                All SEO Tools
+              </a>
+            </li>
+
+            <li>
+              <a href="tools/keyword-density-checker.html">
+                Keyword Density
+              </a>
+            </li>
+
+            <li>
+              <a href="tools/meta-tag-analyzer.html">
+                Meta Tag Analyzer
+              </a>
+            </li>
+
+            <li>
+              <a href="tools/robots-txt-tester.html">
+                Robots.txt Tester
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Website</h4>
+
+          <ul>
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="blog/index.html">
+                Blog
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Information</h4>
+
+          <ul>
+
+            <li>
+              <a href="privacy-policy.html">
+                Privacy Policy
+              </a>
+            </li>
+
+            <li>
+              <a href="tools/index.html">
+                SEO Tools
+              </a>
+            </li>
+
+            <li>
+              <a href="blog/index.html">
+                SEO Blog
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2026 SEO Tools Hub. All rights reserved.
+        </div>
+
+        <div>
+          Free SEO Tools for Website Optimization
+        </div>
+
+      </div>
 
     </div>
 
-  </div>
+  </footer>
 
-</section>
 
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
 
-<!-- SEARCH -->
+  <script>
 
-<div class="tool-search-section">
+    /* Mobile Navigation */
 
-  <div class="container">
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
 
-    <div class="search-box">
+    mobileMenu.addEventListener("click", function () {
 
-      <input
-        type="search"
-        id="toolSearch"
-        placeholder="Search for an SEO tool..."
-        onkeyup="searchTools()"
-        aria-label="Search SEO tools">
+      navLinks.classList.toggle("show");
 
-    </div>
+      const expanded =
+        mobileMenu.getAttribute("aria-expanded") === "true";
 
-  </div>
+      mobileMenu.setAttribute(
+        "aria-expanded",
+        String(!expanded)
+      );
 
-</div>
+    });
 
 
-<!-- TOOLS -->
+    /* Close mobile menu after clicking a link */
 
-<section id="tools">
+    document.querySelectorAll("#navLinks a").forEach(function (link) {
 
-  <div class="container">
+      link.addEventListener("click", function () {
 
-    <div class="section-heading">
+        navLinks.classList.remove("show");
 
-      <h2>Free SEO Tools</h2>
+        mobileMenu.setAttribute(
+          "aria-expanded",
+          "false"
+        );
 
-      <p>
-        Explore our collection of browser-based tools for SEO analysis,
-        technical SEO, content optimization and website development.
-      </p>
+      });
 
-    </div>
+    });
 
 
-    <!-- CONTENT SEO -->
+    /* SEO Tool Search */
 
-    <h3 class="category-title">
-      Content & On-Page SEO
-    </h3>
+    const toolSearch = document.getElementById("toolSearch");
+    const toolCards = document.querySelectorAll(".tool-card");
+    const noResults = document.getElementById("noResults");
 
-    <div class="tools-grid">
+    toolSearch.addEventListener("input", function () {
 
-      <article class="tool-card">
+      const searchValue =
+        toolSearch.value.toLowerCase().trim();
 
-        <div class="tool-icon">KD</div>
+      let visibleTools = 0;
 
-        <h3>Keyword Density Checker</h3>
+      toolCards.forEach(function (card) {
 
-        <p>
-          Check keyword frequency and density in your content.
-        </p>
+        const toolName =
+          card.getAttribute("data-tool").toLowerCase();
 
-        <a
-          href="tools/keyword-density-checker.html"
-          class="tool-link">
-          Use Tool →
-        </a>
+        const cardText =
+          card.innerText.toLowerCase();
 
-      </article>
+        const matches =
+          toolName.includes(searchValue) ||
+          cardText.includes(searchValue);
 
+        if (matches) {
 
-      <article class="tool-card">
+          card.style.display = "flex";
+          visibleTools++;
 
-        <div class="tool-icon">WC</div>
+        } else {
 
-        <h3>Word Counter</h3>
+          card.style.display = "none";
 
-        <p>
-          Count words, characters and paragraphs in your content.
-        </p>
+        }
 
-        <a
-          href="tools/word-counter.html"
-          class="tool-link">
-          Use Tool →
-        </a>
+      });
 
-      </article>
+      noResults.style.display =
+        visibleTools === 0 ? "block" : "none";
 
+    });
 
-      <article class="tool-card">
-
-        <div class="tool-icon">MT</div>
-
-        <h3>Meta Tag Analyzer</h3>
-
-        <p>
-          Analyze important meta tags from your HTML source.
-        </p>
-
-        <a
-          href="tools/meta-tag-analyzer.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">TT</div>
-
-        <h3>Title Tag Checker</h3>
-
-        <p>
-          Check your title tag length and basic SEO recommendations.
-        </p>
-
-        <a
-          href="tools/title-tag-checker.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">MD</div>
-
-        <h3>Meta Description Checker</h3>
-
-        <p>
-          Analyze your meta description length and content.
-        </p>
-
-        <a
-          href="tools/meta-description-checker.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">HC</div>
-
-        <h3>Heading Structure Analyzer</h3>
-
-        <p>
-          Analyze H1, H2, H3 and other heading structures.
-        </p>
-
-        <a
-          href="tools/heading-structure-analyzer.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">RC</div>
-
-        <h3>Readability Checker</h3>
-
-        <p>
-          Check the readability of your written content.
-        </p>
-
-        <a
-          href="tools/readability-checker.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">TC</div>
-
-        <h3>Text Case Converter</h3>
-
-        <p>
-          Convert text into uppercase, lowercase, title case and more.
-        </p>
-
-        <a
-          href="tools/text-case-converter.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-    </div>
-
-
-    <!-- TECHNICAL SEO -->
-
-    <h3 class="category-title">
-      Technical SEO
-    </h3>
-
-    <div class="tools-grid">
-
-      <article class="tool-card">
-
-        <div class="tool-icon">RT</div>
-
-        <h3>Robots.txt Tester</h3>
-
-        <p>
-          Test robots.txt rules and check whether paths are allowed or blocked.
-        </p>
-
-        <a
-          href="tools/robots-txt-tester.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">RG</div>
-
-        <h3>Robots.txt Generator</h3>
-
-        <p>
-          Create a robots.txt file using simple SEO settings.
-        </p>
-
-        <a
-          href="tools/robots-txt-generator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">SV</div>
-
-        <h3>XML Sitemap Validator</h3>
-
-        <p>
-          Validate XML sitemap structure and identify common problems.
-        </p>
-
-        <a
-          href="tools/xml-sitemap-validator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">SX</div>
-
-        <h3>Sitemap URL Extractor</h3>
-
-        <p>
-          Extract URLs from XML sitemap files quickly.
-        </p>
-
-        <a
-          href="tools/sitemap-url-extractor.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">JL</div>
-
-        <h3>JSON-LD Validator</h3>
-
-        <p>
-          Validate JSON-LD structured data syntax and common properties.
-        </p>
-
-        <a
-          href="tools/json-ld-validator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">WM</div>
-
-        <h3>Web Manifest Validator</h3>
-
-        <p>
-          Validate Web App Manifest JSON for common PWA properties.
-        </p>
-
-        <a
-          href="tools/web-manifest-validator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">VP</div>
-
-        <h3>Viewport Meta Checker</h3>
-
-        <p>
-          Check viewport meta tags and mobile configuration.
-        </p>
-
-        <a
-          href="tools/viewport-meta-checker.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">FL</div>
-
-        <h3>HTML Lang Checker</h3>
-
-        <p>
-          Check the HTML language attribute in your page source.
-        </p>
-
-        <a
-          href="tools/html-lang-checker.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">FV</div>
-
-        <h3>Favicon Validator</h3>
-
-        <p>
-          Check favicon references and common favicon HTML settings.
-        </p>
-
-        <a
-          href="tools/favicon-validator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-    </div>
-
-
-    <!-- GENERATORS -->
-
-    <h3 class="category-title">
-      SEO Generators
-    </h3>
-
-    <div class="tools-grid">
-
-      <article class="tool-card">
-
-        <div class="tool-icon">MG</div>
-
-        <h3>Meta Tag Generator</h3>
-
-        <p>
-          Generate SEO-friendly meta tags for your website pages.
-        </p>
-
-        <a
-          href="tools/meta-tag-generator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">HG</div>
-
-        <h3>Hreflang Generator</h3>
-
-        <p>
-          Generate hreflang tags for multilingual and regional pages.
-        </p>
-
-        <a
-          href="tools/hreflang-generator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">HV</div>
-
-        <h3>Hreflang Validator</h3>
-
-        <p>
-          Validate hreflang HTML tags and language-region values.
-        </p>
-
-        <a
-          href="tools/hreflang-validator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-
-      <article class="tool-card">
-
-        <div class="tool-icon">OG</div>
-
-        <h3>Open Graph Generator</h3>
-
-        <p>
-          Generate Open Graph meta tags for social sharing.
-        </p>
-
-        <a
-          href="tools/open-graph-generator.html"
-          class="tool-link">
-          Use Tool →
-        </a>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="about-section">
-
-  <div class="container">
-
-    <div class="about-grid">
-
-      <div class="about-content">
-
-        <h2>Free SEO Tools for Everyone</h2>
-
-        <p>
-          SEO Tools Hub provides simple browser-based tools that help
-          website owners, bloggers, developers and SEO professionals
-          analyze and improve important aspects of their websites.
-        </p>
-
-        <p>
-          Our tools are designed to be easy to use without complicated
-          software or unnecessary setup.
-        </p>
-
-        <ul class="feature-list">
-
-          <li>Free to use</li>
-          <li>Simple and easy interface</li>
-          <li>Browser-based tools</li>
-          <li>No unnecessary account required</li>
-          <li>Useful SEO analysis and validation tools</li>
-
-        </ul>
-
-      </div>
-
-
-      <div class="about-box">
-
-        <h3>Why Use SEO Tools Hub?</h3>
-
-        <p>
-          From content analysis to technical SEO validation, our collection
-          is designed to provide practical tools for everyday website
-          optimization.
-        </p>
-
-        <br>
-
-        <p>
-          Choose a tool, enter your information, and get useful results
-          directly in your browser.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- HOW IT WORKS -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>How Our Tools Work</h2>
-
-      <p>
-        Most of our tools are designed to process the information you
-        provide directly in your browser.
-      </p>
-
-    </div>
-
-
-    <div class="steps-grid">
-
-      <div class="step-card">
-
-        <div class="step-number">1</div>
-
-        <h3>Choose a Tool</h3>
-
-        <p>
-          Select the SEO tool that matches what you want to check,
-          analyze or generate.
-        </p>
-
-      </div>
-
-
-      <div class="step-card">
-
-        <div class="step-number">2</div>
-
-        <h3>Enter Your Data</h3>
-
-        <p>
-          Paste your text, HTML, JSON, XML or other required information
-          into the tool.
-        </p>
-
-      </div>
-
-
-      <div class="step-card">
-
-        <div class="step-number">3</div>
-
-        <h3>Get Your Results</h3>
-
-        <p>
-          Review the analysis, validation results or generated output
-          and make the required improvements.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- FAQ -->
-
-<section>
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <h2>Frequently Asked Questions</h2>
-
-      <p>
-        Learn more about using SEO Tools Hub.
-      </p>
-
-    </div>
-
-
-    <div class="faq-list">
-
-      <div class="faq-item">
-
-        <h3>Are these SEO tools free?</h3>
-
-        <p>
-          Yes. SEO Tools Hub is designed to provide free browser-based
-          tools for website owners, bloggers and developers.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>Do these tools require an API?</h3>
-
-        <p>
-          Many of our tools are designed to work directly in the browser
-          without requiring an external API.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>Can I use these tools on mobile?</h3>
-
-        <p>
-          Yes. The website is designed to be responsive and usable on
-          desktop, tablet and mobile devices.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>Who can use these SEO tools?</h3>
-
-        <p>
-          Bloggers, developers, website owners, content writers,
-          marketers and SEO professionals can use these tools.
-        </p>
-
-      </div>
-
-
-      <div class="faq-item">
-
-        <h3>Do you store the information I enter?</h3>
-
-        <p>
-          Browser-based tools can process supported input directly in
-          your browser. Always review the privacy information for the
-          specific tool before entering sensitive information.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-  <div class="container">
-
-    <h2>Start Optimizing Your Website</h2>
-
-    <p>
-      Explore our collection of free SEO tools and find the tools you need
-      for content and technical SEO.
-    </p>
-
-    <a href="#tools" class="btn">
-      Explore All Tools
-    </a>
-
-  </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div class="footer-brand">
-
-        <h3>SEO Tools Hub</h3>
-
-        <p>
-          Free online SEO tools for website owners, bloggers,
-          developers and digital marketers.
-        </p>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>Tools</h4>
-
-        <a href="tools/index.html">All SEO Tools</a>
-
-        <a href="tools/keyword-density-checker.html">
-          Keyword Density
-        </a>
-
-        <a href="tools/word-counter.html">
-          Word Counter
-        </a>
-
-        <a href="tools/meta-tag-analyzer.html">
-          Meta Tag Analyzer
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>Website</h4>
-
-        <a href="about.html">About</a>
-
-        <a href="contact.html">Contact</a>
-
-        <a href="blog/index.html">Blog</a>
-
-        <a href="privacy-policy.html">
-          Privacy Policy
-        </a>
-
-      </div>
-
-
-      <div class="footer-column">
-
-        <h4>Technical SEO</h4>
-
-        <a href="tools/robots-txt-tester.html">
-          Robots.txt Tester
-        </a>
-
-        <a href="tools/xml-sitemap-validator.html">
-          Sitemap Validator
-        </a>
-
-        <a href="tools/json-ld-validator.html">
-          JSON-LD Validator
-        </a>
-
-        <a href="tools/web-manifest-validator.html">
-          Web Manifest Validator
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-      © 2026 SEO Tools Hub. All rights reserved.
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-<script>
-
-function toggleMenu() {
-
-  const nav = document.getElementById("navLinks");
-
-  nav.classList.toggle("active");
-
-}
-
-
-function searchTools() {
-
-  const input =
-    document.getElementById("toolSearch").value.toLowerCase().trim();
-
-  const cards =
-    document.querySelectorAll(".tool-card");
-
-  cards.forEach(function(card) {
-
-    const text =
-      card.textContent.toLowerCase();
-
-    if (text.includes(input)) {
-
-      card.style.display = "flex";
-
-    } else {
-
-      card.style.display = "none";
-
-    }
-
-  });
-
-}
-
-</script>
+  </script>
 
 </body>
 </html>
